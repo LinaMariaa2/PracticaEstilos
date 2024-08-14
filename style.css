@@ -11,7 +11,7 @@ body{
 
 .main{
     border: 1px solid rgb(12, 12, 12);
-    height: 200vh;
+    height: 250vh;
 }
 
 .footer{
@@ -36,5 +36,20 @@ body{
 .item{
     list-style: none;
 
+    
+}
+.form{
+    width: 40vw; /* ancho del formulario */
+    margin:auto;
+    border: 1px solid green;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
     
 }

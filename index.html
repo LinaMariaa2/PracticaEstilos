@@ -124,12 +124,12 @@
                 <caption class="border">Titulo Tabla</caption>
                 <thead> 
                     <tr>
-                        <th>hora</th>
-                        <th>lunes</th>
-                        <th>Martes</th>
-                        <th>Miercoles</th>
-                        <th>Jueves</th>
-                        <th>Viernes</th>
+                        <th class="border">hora</th>
+                        <th class="border">lunes</th>
+                        <th class="border">Martes</th>
+                        <th class="border" >Miercoles</th>
+                        <th class="border">Jueves</th>
+                        <th class="border">Viernes</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -168,7 +168,88 @@
                         </tr>
 
                 </tfooter>
+                
             </table>
+        </section>
+        <section class="form ">
+            <h1>FORMULARIO</h1>
+            <fieldset>
+                <div >
+                    <label for="nombre">Ingese su nombre: </label> <br>
+                    <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre" required>  
+                </div>
+                    
+                <div>
+                    <label for="apellido">Ingese su apellido: </label> <br>
+                    <input id="apellido" type="text"name="apelido" placeholder="Ingrese su apellido" required>
+                </div>
+    
+                <div>
+                    <label for="ciudad">Ingrese ciudad: </label> <br>
+                    <input id="ciudad" type="text"name="ciudad" placeholder="Ingrese su ciudad" required>
+                </div>
+            </fieldset>
+           
+
+            <div>
+                <fieldset>
+                    <legend>Seleccione genero</legend>
+                    <input type="radio" name="genero" value="masculino"> masculino
+                    <input type="radio" name="genero" value="femenino"> femenino
+                    <input type="radio" name="genero" value="no sabe"> No sabe
+                </fieldset>
+               
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Seleccione Hobbie</legend>
+                    <input type="checkbox" name="tennis" value="tennis"> tennis
+                    <input type="checkbox" name="Basket" value="Basket"> Basket
+                    <input type="checkbox" name="Patinaje" value="Patinaje">Patinaje
+                </fieldset>
+                <br>
+            
+            </div>
+            <div>
+                <label for="fecha">Fecha de nacimiento  </label>
+                <input type="date" name="Fecha de nacimiento" value="Fecha de nacimiento">
+            </div>
+            <br>
+
+            <div>
+                <label for="pais">Pais de nacimiento </label>
+                <select name ="pais" id="pais">
+                    <option value="Colombia"> Colombia </option> 
+                    <option value="Peru">Peru</option> 
+                    <option value="Venezuela">Venezuela </option> 
+                    <option value="Mexico">Mexico</option> 
+                </select>
+            </div>
+
+            <br>
+            <div>
+                <label for="email">Ingese su email: </label> <br>
+                <input id="email" type="email">
+            </div>
+
+            <div>
+                <label for="contraseña">Ingrese su contraseña: </label> <br>
+                <input id="contraseña" type="password">
+            </div>
+
+            <div>
+                <label for="mensaje">Ingrese su mensaje </label> <br>
+                <textarea name="mensaje" id="mensaje">Escriba su mensaje: </textarea> <br>
+            </div>
+            
+            <br>
+            <div>
+                <label for="documento">Ingrese su documento </label> <br>
+                <input type="file" name="documento" id="documento">
+            </div>
+            <br>
+
+            <button>Registrar</button>
         </section>
 
    </main>
